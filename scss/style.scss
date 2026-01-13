@@ -1,6 +1,10 @@
 @import "mixins";
 @import "global";
 
+main{
+    overflow: hidden;
+}
+
 .about-company{
     margin-top: 70px;
     background: url(../img/about-company-bg.jpg);

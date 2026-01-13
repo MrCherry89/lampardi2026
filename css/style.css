@@ -584,6 +584,10 @@ a:focus {
   transform: translateY(-1px) rotate(-45deg);
 }
 
+main {
+  overflow: hidden;
+}
+
 .about-company {
   margin-top: 70px;
   background: url(../img/about-company-bg.jpg);
