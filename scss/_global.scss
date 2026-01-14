@@ -301,7 +301,7 @@ a {
           margin-bottom: 6px;
          }
       }
-      p{
+      > p{
         margin-bottom: 16px;
         color: rgba(255, 255, 255, 0.75);
         font-size: 16px;
@@ -347,6 +347,9 @@ a {
             font-size: 16px;
           }
         }
+      }
+      .checkbox-wrap{
+        margin-top: 12px;
       }
     }
   }
@@ -503,4 +506,74 @@ a {
   -ms-transform: translateY(-1px) rotate(-45deg);
   -o-transform: translateY(-1px) rotate(-45deg);
   transform: translateY(-1px) rotate(-45deg);
+}
+
+.checkbox-wrap {
+
+  label {
+      @include flex;
+      @include align-center;
+      cursor: pointer;
+      position: relative;
+      font-size: 14px;
+      color: black;
+
+      input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 0;
+          overflow: hidden;
+          opacity: 0;
+      }
+
+      input:checked ~ span:after {
+          opacity: 1;
+      }
+      input:checked ~ span {
+          border-color: #FF6E00;
+          background: #FF6E00;
+      }
+      .text{
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.75);
+        margin-bottom: 0;
+        a{
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.75);
+          text-decoration: underline;
+        }
+      }
+
+      span {
+          width: 18px;
+          min-width: 18px;
+          height: 18px;
+          display: inline-block;
+          position: relative;
+          transition: .2s;
+          border: 2px solid #ccc;
+          margin-right: 10px;
+
+          @media(max-width: 767px) {
+              margin-right: 10px;
+          }
+
+          &:after {
+              content: '';
+              background: url(../img/check.svg) no-repeat center center/cover;
+              width: 13px;
+              height: 10px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-top: -5px;
+              margin-left: -6px;
+              opacity: 0;
+              transition: .2s;
+          }
+      }
+
+  }
 }
