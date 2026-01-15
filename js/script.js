@@ -128,5 +128,55 @@
       menuWrap.addEventListener('mouseenter', openMenu);
       menuWrap.addEventListener('mouseleave', scheduleClose);
 
+      $(".filter-btn").on("click", function(){
+        $(".filter-hide-wrap").addClass("open");
+        $("html, body").addClass("overflow");
+      })
+
+      $(".filter-hide-info .close").on("click", function(){
+        $(".filter-hide-wrap").removeClass("open");
+        $("html, body").removeClass("overflow");
+      })
+
+      const minRange = document.getElementById('minRange');
+      const maxRange = document.getElementById('maxRange');
+      const range = document.querySelector('.range');
+      const minVal = document.getElementById('minVal');
+      const maxVal = document.getElementById('maxVal');
+      
+      if (minRange && maxRange && range && minVal && maxVal) {
+      
+        const max = parseInt(minRange.max);
+        const gap = 5000;
+      
+        function update() {
+          let min = parseInt(minRange.value);
+          let maxV = parseInt(maxRange.value);
+      
+          if (maxV - min < gap) {
+            if (this === minRange) {
+              minRange.value = maxV - gap;
+            } else {
+              maxRange.value = min + gap;
+            }
+          }
+      
+          min = parseInt(minRange.value);
+          maxV = parseInt(maxRange.value);
+      
+          range.style.left = (min / max) * 100 + '%';
+          range.style.width = ((maxV - min) / max) * 100 + '%';
+      
+          minVal.value = min.toLocaleString('ru-RU');
+          maxVal.value = maxV.toLocaleString('ru-RU');
+        }
+      
+        minRange.addEventListener('input', update);
+        maxRange.addEventListener('input', update);
+      
+        update();
+      }
+      
+
 });
   

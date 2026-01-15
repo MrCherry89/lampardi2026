@@ -1,3 +1,5 @@
+$orange: #FF6E00;
+
 body,
 html {
   overflow-x: hidden;
@@ -217,7 +219,7 @@ a {
           font-size: 16px;
         }
         &:hover{
-          color: #FF6E00;
+          color: $orange;
         }
       }
     }
@@ -249,7 +251,7 @@ a {
           margin-bottom: 12px;
          }
         &:hover{
-          color: #FF6E00;
+          color: $orange;
         }
       }
       .icons{
@@ -261,7 +263,7 @@ a {
           display: flex;
           background: #080807;
           &:hover{
-            background: #FF6E00;
+            background: $orange;
           }
           img{
             margin: auto;
@@ -320,13 +322,13 @@ a {
           width: 32px;
           height: 32px;
           display: flex;
-          background: #FF6E00;
+          background: $orange;
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
           right: 8px;
           &:hover{
-            background: lighten(#FF6E00, 5%);
+            background: lighten($orange, 5%);
           }
           img{
             margin: auto;
@@ -372,7 +374,7 @@ a {
         margin-top: 8px;
        }
       &:hover{
-        color: #FF6E00;
+        color: $orange;
       }
     }
     p{
@@ -382,8 +384,8 @@ a {
       a{
         border-bottom: 1px solid rgba(10, 10, 10, 0.70);
         &:hover{
-          color: #FF6E00;
-          border-color: #FF6E00;
+          color: $orange;
+          border-color: $orange;
         }
       }
     }
@@ -532,8 +534,8 @@ a {
           opacity: 1;
       }
       input:checked ~ span {
-          border-color: #FF6E00;
-          background: #FF6E00;
+          border-color: $orange;
+          background: $orange;
       }
       .text{
         font-size: 14px;
