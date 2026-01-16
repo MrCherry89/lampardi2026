@@ -138,6 +138,16 @@
         $("html, body").removeClass("overflow");
       })
 
+      $(".characteristics-click").on("click", function(){
+        $(".characteristics-hide-wrap").addClass("open");
+        $("html, body").addClass("overflow");
+      })
+
+      $(".characteristics-hide-info .close").on("click", function(){
+        $(".characteristics-hide-wrap").removeClass("open");
+        $("html, body").removeClass("overflow");
+      })
+
       const minRange = document.getElementById('minRange');
       const maxRange = document.getElementById('maxRange');
       const range = document.querySelector('.range');
@@ -176,7 +186,48 @@
       
         update();
       }
+
+      $('.card-product-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: true,
+        asNavFor: '.card-product-thumbs',
       
+        nextArrow: $('.card-product-slider-wrap .slick-next'),
+        prevArrow: $('.card-product-slider-wrap .slick-prev'),
+      });
+      
+      $('.card-product-thumbs').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.card-product-slider',
+        focusOnSelect: true,
+        arrows: false
+      });
+
+      $(".favorite-style .icon").on("click", function(){
+        $(this).toggleClass("active");
+      })
+
+      document.querySelector('.text-scroll')?.addEventListener('click', e => {
+        e.preventDefault();
+      
+        const t = document.getElementById('about-series');
+        if (!t) return;
+      
+        const s = window.pageYOffset;
+        const y = t.getBoundingClientRect().top + s - 72;
+        const d = 800;
+        const st = performance.now();
+      
+        requestAnimationFrame(function a(time) {
+          const p = Math.min((time - st) / d, 1);
+          window.scrollTo(0, s + (y - s) * p);
+          if (p < 1) requestAnimationFrame(a);
+        });
+      });
+         
 
 });
   
