@@ -1135,7 +1135,7 @@ a:focus {
 @media (max-width: 1024px) {
   .characteristics-hide-wrap .characteristics-hide-info {
     width: 100%;
-    max-width: 420px;
+    max-width: 450px;
   }
 }
 .characteristics-hide-wrap .characteristics-hide-info .top-info {

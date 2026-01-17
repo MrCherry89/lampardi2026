@@ -227,6 +227,29 @@
           if (p < 1) requestAnimationFrame(a);
         });
       });
+
+      const overlay = document.querySelector('.characteristics-hide-wrap');
+      const modal = document.querySelector('.characteristics-hide-info');
+      
+      function openModal() {
+        overlay.classList.add('open');
+        document.documentElement.classList.add('overflow');
+        document.body.classList.add('overflow');
+      }
+      
+      function closeModal() {
+        overlay.classList.remove('open');
+        document.documentElement.classList.remove('overflow');
+        document.body.classList.remove('overflow');
+      }
+      
+      // клик по фону — закрываем
+      overlay.addEventListener('click', closeModal);
+      
+      // клик внутри — НЕ закрываем
+      modal.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
          
 
 });
