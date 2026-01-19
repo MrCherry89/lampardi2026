@@ -1213,6 +1213,876 @@ a:focus {
   width: 45%;
 }
 
+.private-policy-wrap {
+  padding-top: 90px;
+}
+.private-policy-wrap .wrapper {
+  max-width: 980px;
+}
+.private-policy-wrap .texts-info .texts {
+  margin-bottom: 24px;
+}
+.private-policy-wrap .texts-info .texts:last-child {
+  margin-bottom: 0px;
+}
+.private-policy-wrap .texts-info h1 {
+  font-size: 80px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 32px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 1024px) {
+  .private-policy-wrap .texts-info h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .private-policy-wrap .texts-info h1 {
+    font-size: 34px;
+  }
+}
+.private-policy-wrap .texts-info h2 {
+  font-size: 36px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 12px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 767px) {
+  .private-policy-wrap .texts-info h2 {
+    font-size: 28px;
+  }
+}
+.private-policy-wrap .texts-info h3 {
+  font-size: 34px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 12px;
+  margin-top: 40px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 767px) {
+  .private-policy-wrap .texts-info h3 {
+    font-size: 27px;
+    margin-top: 30px;
+  }
+}
+.private-policy-wrap .texts-info h4 {
+  font-size: 32px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 12px;
+  margin-top: 40px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 767px) {
+  .private-policy-wrap .texts-info h4 {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+}
+.private-policy-wrap .texts-info h5 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 12px;
+  margin-top: 40px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 767px) {
+  .private-policy-wrap .texts-info h5 {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+}
+.private-policy-wrap .texts-info h6 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 767px) {
+  .private-policy-wrap .texts-info h6 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
+.private-policy-wrap .texts-info b {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  color: #0A0A0A;
+  margin-bottom: 8px;
+}
+.private-policy-wrap .texts-info p {
+  margin-bottom: 12px;
+  color: rgba(10, 10, 10, 0.7);
+  font-size: 16px;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .private-policy-wrap .texts-info p {
+    font-size: 15px;
+  }
+}
+.private-policy-wrap .texts-info span {
+  margin-bottom: 12px;
+  color: rgba(10, 10, 10, 0.7);
+  font-size: 16px;
+  font-weight: normal;
+}
+@media (max-width: 767px) {
+  .private-policy-wrap .texts-info span {
+    font-size: 15px;
+  }
+}
+
+.delivery-payment-wrap {
+  padding-top: 90px;
+}
+.delivery-payment-wrap .wrapper {
+  max-width: 980px;
+}
+.delivery-payment-wrap .delivery-info h1 {
+  font-size: 80px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 32px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 1024px) {
+  .delivery-payment-wrap .delivery-info h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .delivery-payment-wrap .delivery-info h1 {
+    font-size: 36px;
+  }
+}
+
+.delivery-items {
+  column-count: 2;
+  column-gap: 20px;
+}
+@media (max-width: 767px) {
+  .delivery-items {
+    column-count: 1;
+  }
+}
+.delivery-items .delivery-item {
+  padding: 28px;
+  border: 1px solid #EEEFF0;
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .delivery-items .delivery-item {
+    padding: 24px;
+  }
+}
+.delivery-items .delivery-item h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: "Oranienbaum";
+  margin-bottom: 12px;
+  font-weight: normal;
+  color: #0A0A0A;
+}
+@media (max-width: 1024px) {
+  .delivery-items .delivery-item h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .delivery-items .delivery-item h3 {
+    font-size: 28px;
+  }
+}
+.delivery-items .delivery-item ul {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+.delivery-items .delivery-item ul li {
+  list-style-type: disc;
+  font-size: 16px;
+  color: rgba(10, 10, 10, 0.7);
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .delivery-items .delivery-item ul li {
+    font-size: 15px;
+  }
+}
+.delivery-items .delivery-item ul.style2 {
+  margin-top: 8px;
+}
+.delivery-items .delivery-item p {
+  font-size: 16px;
+  color: rgba(10, 10, 10, 0.7);
+}
+@media (max-width: 767px) {
+  .delivery-items .delivery-item p {
+    font-size: 15px;
+  }
+}
+
+.exchanges-wrap {
+  padding-top: 90px;
+}
+.exchanges-wrap .wrapper {
+  max-width: 980px;
+}
+.exchanges-wrap .exchanges-info {
+  margin-bottom: -24px;
+}
+.exchanges-wrap .exchanges-info h1 {
+  font-size: 80px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 32px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 1024px) {
+  .exchanges-wrap .exchanges-info h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .exchanges-wrap .exchanges-info h1 {
+    font-size: 36px;
+  }
+}
+.exchanges-wrap .exchanges-info h2 {
+  font-size: 36px;
+  font-weight: normal;
+  color: #0A0A0A;
+  margin-bottom: 12px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 767px) {
+  .exchanges-wrap .exchanges-info h2 {
+    font-size: 28px;
+  }
+}
+.exchanges-wrap .exchanges-info p {
+  margin-bottom: 24px;
+  color: rgba(10, 10, 10, 0.7);
+  font-size: 16px;
+}
+.exchanges-wrap .exchanges-info .texts {
+  margin-bottom: 24px;
+}
+.exchanges-wrap .exchanges-info .texts b {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #0A0A0A;
+}
+.exchanges-wrap .exchanges-info ul {
+  padding-left: 20px;
+}
+.exchanges-wrap .exchanges-info ul li {
+  list-style-type: disc;
+  font-size: 16px;
+  color: rgba(10, 10, 10, 0.7);
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .exchanges-wrap .exchanges-info ul li {
+    font-size: 15px;
+  }
+}
+.exchanges-wrap .exchanges-info ul.style2 {
+  margin-top: 8px;
+}
+
+.error-block {
+  height: 100svh;
+  padding-bottom: 40px;
+  padding-top: 90px;
+}
+.error-block .wrapper {
+  display: flex;
+  height: 100%;
+}
+.error-block .error-info {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .error-block .error-info {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+}
+.error-block .error-info h1 {
+  font-weight: normal;
+  max-width: 670px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  font-family: "Oranienbaum";
+  font-size: 80px;
+}
+@media (max-width: 1024px) {
+  .error-block .error-info h1 {
+    font-size: 60px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .error-block .error-info h1 {
+    font-size: 36px;
+    max-width: 300px;
+  }
+}
+.error-block .error-info h1 .orange-btn {
+  display: inline-flex;
+  background: #FF6E00;
+  font-size: 16px;
+  color: white;
+  padding: 16px 28px;
+  position: relative;
+  top: -20px;
+}
+@media (max-width: 1024px) {
+  .error-block .error-info h1 .orange-btn {
+    top: -15px;
+  }
+}
+@media (max-width: 767px) {
+  .error-block .error-info h1 .orange-btn {
+    position: static;
+    margin-top: 15px;
+  }
+}
+.error-block .error-info h1 .orange-btn:hover {
+  background: #ff8224;
+}
+.error-block .error-info .err-text {
+  text-transform: uppercase;
+  color: #0A0A0A;
+  font-family: "Oranienbaum";
+  font-size: 80px;
+  font-weight: normal;
+}
+
+.contacts-wrap {
+  padding-top: 90px;
+}
+.contacts-wrap h1 {
+  font-size: 80px;
+  font-weight: normal;
+  color: #0A0A0A;
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 1024px) {
+  .contacts-wrap h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts-wrap h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+.contacts-wrap .contacts-info {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .contacts-wrap .contacts-info {
+    flex-direction: column;
+  }
+}
+.contacts-wrap .contacts-info .map-info {
+  width: 440px;
+}
+@media (max-width: 1024px) {
+  .contacts-wrap .contacts-info .map-info {
+    width: 100%;
+  }
+}
+.contacts-wrap .contacts-info .map-info .icons {
+  display: flex;
+  gap: 16px;
+}
+.contacts-wrap .contacts-info .map-info .icons .icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  background: #080807;
+}
+.contacts-wrap .contacts-info .map-info .icons .icon:hover {
+  background: #FF6E00;
+}
+.contacts-wrap .contacts-info .map-info .icons .icon img {
+  margin: auto;
+}
+.contacts-wrap .contacts-info .map-info .texts {
+  margin-bottom: 24px;
+}
+.contacts-wrap .contacts-info .map-info .texts b {
+  display: block;
+  font-size: 16px;
+  color: rgba(10, 10, 10, 0.7);
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+.contacts-wrap .contacts-info .map-info .texts a, .contacts-wrap .contacts-info .map-info .texts span {
+  font-size: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  font-family: "Oranienbaum";
+}
+@media (max-width: 767px) {
+  .contacts-wrap .contacts-info .map-info .texts a, .contacts-wrap .contacts-info .map-info .texts span {
+    font-size: 28px;
+  }
+}
+.contacts-wrap .contacts-info #map {
+  flex-grow: 1;
+  filter: grayscale(100%) contrast(90%) brightness(105%);
+}
+@media (max-width: 1024px) {
+  .contacts-wrap .contacts-info #map {
+    width: 100%;
+    height: 80vw;
+  }
+}
+
+.contacts-form-wrap {
+  background: #080807;
+  padding: 24px;
+  margin-top: 120px;
+}
+@media (max-width: 1024px) {
+  .contacts-form-wrap {
+    margin-top: 40px;
+  }
+}
+.contacts-form-wrap h3 {
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .contacts-form-wrap h3 {
+    font-size: 28px;
+  }
+}
+.contacts-form-wrap > p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .contacts-form-wrap > p {
+    font-size: 15px;
+  }
+}
+.contacts-form-wrap .contacts-form .inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .contacts-form-wrap .contacts-form .inputs {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+}
+.contacts-form-wrap .contacts-form .inputs input {
+  height: 52px;
+  width: 100%;
+  padding: 0 16px;
+  font-size: 18px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.contacts-form-wrap .contacts-form .inputs input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.contacts-form-wrap .contacts-form .inputs input::-moz-placeholder {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.contacts-form-wrap .contacts-form .inputs input:-ms-input-placeholder {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.contacts-form-wrap .contacts-form .inputs input:-moz-placeholder {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.contacts-form-wrap .contacts-form .button-wrap {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .contacts-form-wrap .contacts-form .button-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.contacts-form-wrap .contacts-form .button-wrap .send {
+  background: #FF6E00;
+  border: 1px solid #FF6E00;
+  color: white;
+  padding: 14px 22px 18px;
+  margin-right: 20px;
+  height: 52px;
+  font-size: 16px;
+}
+.contacts-form-wrap .contacts-form .button-wrap .send:hover {
+  background: #000;
+}
+@media (max-width: 767px) {
+  .contacts-form-wrap .contacts-form .button-wrap .send {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.about-title-wrap {
+  padding-top: 90px;
+}
+.about-title-wrap h1 {
+  font-size: 80px;
+  font-weight: normal;
+  color: #0A0A0A;
+  text-align: center;
+  margin-bottom: 32px;
+  font-family: "Oranienbaum";
+  text-transform: uppercase;
+  line-height: 105%;
+}
+@media (max-width: 1024px) {
+  .about-title-wrap h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .about-title-wrap h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+.about-company-block {
+  background: url(../img/about-company-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px 0;
+  height: 55vw;
+  position: relative;
+  z-index: 0;
+}
+.about-company-block:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 1024px) {
+  .about-company-block {
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .about-company-block {
+    padding-bottom: 28px;
+    margin-top: 35px;
+  }
+}
+.about-company-block .wrapper {
+  display: flex;
+  height: 100%;
+}
+.about-company-block .texts {
+  max-width: 670px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .about-company-block .texts {
+    padding-bottom: 420px;
+  }
+}
+.about-company-block .texts h3 {
+  color: #FFF;
+  font-family: "Oranienbaum";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 102%;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .about-company-block .texts h3 {
+    font-size: 36px;
+  }
+}
+.about-company-block .texts p {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+@media (max-width: 767px) {
+  .about-company-block .texts p {
+    font-size: 15px;
+    max-width: 320px;
+  }
+}
+
+.our-mission {
+  padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  .our-mission {
+    padding: 60px 0;
+  }
+}
+.our-mission .our-mission-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .our-mission .our-mission-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.our-mission .our-mission-info .text-wrap {
+  width: 440px;
+}
+@media (max-width: 1024px) {
+  .our-mission .our-mission-info .text-wrap {
+    width: 100%;
+  }
+}
+.our-mission .our-mission-info .text-wrap h2 {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  font-family: "Oranienbaum";
+}
+@media (max-width: 767px) {
+  .our-mission .our-mission-info .text-wrap h2 {
+    font-size: 36px;
+  }
+}
+.our-mission .our-mission-info .text-wrap p {
+  font-size: 16px;
+  color: rgba(10, 10, 10, 0.7);
+}
+@media (max-width: 767px) {
+  .our-mission .our-mission-info .text-wrap p {
+    font-size: 15px;
+  }
+}
+.our-mission .our-mission-info .img-wrap {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .our-mission .our-mission-info .img-wrap {
+    width: 100%;
+  }
+}
+.our-mission .our-mission-info .img-wrap img {
+  width: 100%;
+}
+
+.values-block {
+  padding-bottom: 80px;
+}
+@media (max-width: 1024px) {
+  .values-block {
+    padding-bottom: 60px;
+  }
+}
+.values-block .values-info {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .values-block .values-info {
+    flex-direction: column-reverse;
+  }
+}
+.values-block .values-info .img-wrap {
+  flex-grow: 1;
+  display: flex;
+  align-self: flex-start;
+}
+@media (max-width: 1024px) {
+  .values-block .values-info .img-wrap {
+    width: 100%;
+  }
+}
+.values-block .values-info .img-wrap img {
+  width: 100%;
+}
+.values-block .values-info .text-wrap {
+  width: 440px;
+}
+@media (max-width: 1024px) {
+  .values-block .values-info .text-wrap {
+    width: 100%;
+  }
+}
+.values-block .values-info .text-wrap h2 {
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  font-family: "Oranienbaum";
+}
+@media (max-width: 767px) {
+  .values-block .values-info .text-wrap h2 {
+    font-size: 36px;
+  }
+}
+
+.values-items {
+  gap: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.values-items .values-item {
+  padding: 20px;
+  background: #F7F7F7;
+}
+.values-items .values-item b {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1px;
+  display: block;
+  color: #080807;
+}
+.values-items .values-item span {
+  font-size: 16px;
+  color: rgba(10, 10, 10, 0.7);
+  max-width: 385px;
+  display: inline-block;
+}
+
+.what-offer .global-title {
+  margin-bottom: 32px;
+}
+@media (max-width: 1024px) {
+  .what-offer .global-title {
+    margin-bottom: 20px;
+  }
+}
+.what-offer .offer-items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 1200px) {
+  .what-offer .offer-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .what-offer .offer-items {
+    grid-template-columns: 1fr;
+  }
+}
+.what-offer .offer-items .offer-item {
+  padding: 24px;
+  background: #F7F7F7;
+  min-height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  .what-offer .offer-items .offer-item {
+    min-height: 220px;
+  }
+}
+@media (max-width: 767px) {
+  .what-offer .offer-items .offer-item {
+    padding: 20px;
+    min-height: auto;
+  }
+}
+.what-offer .offer-items .offer-item img {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .what-offer .offer-items .offer-item img {
+    margin-bottom: 10px;
+  }
+}
+.what-offer .offer-items .offer-item b {
+  margin-top: auto;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #080807;
+}
+.what-offer .offer-items .offer-item span {
+  font-size: 16px;
+  color: rgba(10, 10, 10, 0.7);
+}
+
 main {
   overflow: hidden;
 }

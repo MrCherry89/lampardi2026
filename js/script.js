@@ -98,13 +98,15 @@
 
       const header = document.querySelector('.header');
 
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 10) {
-          header.classList.add('fixed');
-        } else {
-          header.classList.remove('fixed');
-        }
-      });
+      if (header) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 10) {
+            header.classList.add('fixed');
+          } else {
+            header.classList.remove('fixed');
+          }
+        });
+      }
 
       const catalogBtn = document.querySelector('.catalog-btn');
       const menuWrap = document.querySelector('.menu-wrap');
@@ -231,25 +233,25 @@
       const overlay = document.querySelector('.characteristics-hide-wrap');
       const modal = document.querySelector('.characteristics-hide-info');
       
-      function openModal() {
-        overlay.classList.add('open');
-        document.documentElement.classList.add('overflow');
-        document.body.classList.add('overflow');
+      if (overlay && modal) {
+        function openModal() {
+          overlay.classList.add('open');
+          document.documentElement.classList.add('overflow');
+          document.body.classList.add('overflow');
+        }
+      
+        function closeModal() {
+          overlay.classList.remove('open');
+          document.documentElement.classList.remove('overflow');
+          document.body.classList.remove('overflow');
+        }
+      
+        overlay.addEventListener('click', closeModal);
+      
+        modal.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
       }
-      
-      function closeModal() {
-        overlay.classList.remove('open');
-        document.documentElement.classList.remove('overflow');
-        document.body.classList.remove('overflow');
-      }
-      
-      // клик по фону — закрываем
-      overlay.addEventListener('click', closeModal);
-      
-      // клик внутри — НЕ закрываем
-      modal.addEventListener('click', (e) => {
-        e.stopPropagation();
-      });
          
 
 });
