@@ -252,7 +252,114 @@
           e.stopPropagation();
         });
       }
-         
 
+      const orders = document.querySelectorAll('.order');
+
+      orders.forEach(order => {
+        const head = order.querySelector('.order-head');
+        const body = order.querySelector('.order-body');
+      
+        body.style.height = order.classList.contains('active')
+          ? body.scrollHeight + 'px'
+          : '0px';
+      
+        head.addEventListener('click', () => {
+      
+          orders.forEach(o => {
+            if (o !== order && o.classList.contains('active')) {
+              o.classList.remove('active');
+              o.querySelector('.order-body').style.height = '0px';
+            }
+          });
+      
+          if (order.classList.contains('active')) {
+            body.style.height = '0px';
+            order.classList.remove('active');
+          } else {
+            order.classList.add('active');
+            body.style.height = body.scrollHeight + 'px';
+          }
+        });
+      });
+
+      Inputmask({
+        mask: "+7 (999) 999-99-99",
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
+        clearIncomplete: true
+      }).mask('#phone');
+         
+      $('#profile-form').validate({
+        rules: {
+          phone: {
+            required: true,
+            minlength: 18
+          }
+        },
+      
+        errorElement: 'span',
+        errorClass: 'error',
+      
+        highlight: function (element) {
+          $(element).addClass('error-field');
+        },
+        unhighlight: function (element) {
+          $(element).removeClass('error-field');
+        },
+      
+        submitHandler: function (form) {
+          console.log('Форма валидна');
+          form.submit(); 
+        }
+      });
+
+      $('#register-form').validate({
+        rules: {
+          phone: {
+            required: true,
+            minlength: 18
+          }
+        },
+      
+        errorElement: 'span',
+        errorClass: 'error',
+      
+        highlight: function (element) {
+          $(element).addClass('error-field');
+        },
+        unhighlight: function (element) {
+          $(element).removeClass('error-field');
+        },
+      
+        submitHandler: function (form) {
+          console.log('Форма валидна');
+          form.submit(); 
+        }
+      });
+
+      $('.open-register').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        closeOnBgClick: true,
+        showCloseBtn: false,
+        removalDelay: 200,
+        mainClass: 'mfp-fade'
+      });
+      
+      $('.popup-close').on('click', function () {
+        $.magnificPopup.close();
+      });
+
+      $('.register-tabs .tab-btn').on('click', function () {
+        const tab = $(this).data('tab');
+      
+        $('.register-tabs .tab-btn').removeClass('active');
+        $(this).addClass('active');
+      
+        $('.tab-content').removeClass('active');
+        $('.tab-content[data-tab="' + tab + '"]').addClass('active');
+      });
+
+      
 });
   
