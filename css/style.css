@@ -2252,6 +2252,10 @@ a:focus {
     margin-top: 12px;
   }
 }
+.profile-wrap .profile-info .profile-content .title-wrap .black-btn {
+  margin-top: 0;
+  display: inline-flex;
+}
 .profile-wrap .profile-info .profile-content h2 {
   text-align: center;
   color: rgba(10, 10, 10, 0.7);
